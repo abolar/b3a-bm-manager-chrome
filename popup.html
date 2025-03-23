@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tim's Tabs</title>
+  <link rel="stylesheet" type="text/css" href="styles/popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Tim's Palette</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search tabs, bookmarks, and Chrome pages...">
+    </div>
+    <div id="results-container">
+      <div class="panel" id="tabs-panel">
+        <h2>Open Tabs</h2>
+        <div class="panel-content" id="tabs-list"></div>
+      </div>
+      <div class="panel" id="bookmarks-panel">
+        <h2>Bookmarks</h2>
+        <div class="panel-content" id="bookmarks-list"></div>
+      </div>
+      <div class="panel" id="chrome-panel">
+        <h2>Chrome Pages</h2>
+        <div class="panel-content" id="chrome-list"></div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button id="show-thumbnails">Show Thumbnails</button>
+    </div>
+  </div>
+  <div id="thumbnails-overlay" class="hidden">
+    <div class="thumbnails-content">
+      <div class="thumbnails-header">
+        <h2>Tab Thumbnails</h2>
+        <button id="close-thumbnails">×</button>
+      </div>
+      <div id="thumbnails-grid"></div>
+    </div>
+  </div>
+  <script src="scripts/popup.js"></script>
+</body>
+</html> 
